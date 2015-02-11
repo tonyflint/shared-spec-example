@@ -17,8 +17,7 @@
 #
 
 require 'serverspec'
-include Serverspec::Helper::Exec
-include Serverspec::Helper::DetectOS
+set :backend, :exec
 
 shared_examples_for 'a thing' do
 
