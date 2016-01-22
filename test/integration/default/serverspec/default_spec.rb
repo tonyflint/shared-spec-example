@@ -18,6 +18,13 @@
 
 require 'spec_helper'
 
+require 'json'
+node = JSON.parse(IO.read('/tmp/kitchen/chef_node.json'))
+
 describe 'Default' do
-  it_behaves_like 'a thing'
+  if node['nihilism']
+    it_behaves_like 'a nihilist'
+  else
+    it_behaves_like 'a thing'
+  end
 end

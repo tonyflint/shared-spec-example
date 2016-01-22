@@ -26,3 +26,11 @@ shared_examples_for 'a thing' do
   end
 
 end
+
+shared_examples_for 'a nihilist' do
+
+  describe file('/test') do
+    its(:content) { should == 'goodbye world' }
+  end
+
+end

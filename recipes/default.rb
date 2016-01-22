@@ -17,5 +17,9 @@
 #
 
 file '/test' do
-  content 'hello world'
+  if node['nihilism']
+    content 'goodbye world... as if you even exist!'
+  else
+    content 'hello world'
+  end
 end

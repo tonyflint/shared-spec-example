@@ -12,3 +12,11 @@ suites:
 - name: default
   run_list:
   - recipe[shared-spec-example]
+  - recipe[export-node]
+
+- name: nihilist
+  attributes:
+    nihilism: true
+  run_list:
+  - recipe[shared-spec-example]
+  - recipe[export-node]
