@@ -1,9 +1,7 @@
 DEPENDENCIES
-  export-node
   shared-spec-example
     path: .
     metadata: true
 
 GRAPH
-  export-node (1.0.1)
   shared-spec-example (1.0.0)

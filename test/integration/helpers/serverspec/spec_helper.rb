@@ -19,7 +19,7 @@
 require 'serverspec'
 set :backend, :exec
 
-shared_examples_for 'a thing' do
+shared_examples_for 'an optimist' do
 
   describe file('/test') do
     its(:content) { should == 'hello world' }
@@ -30,7 +30,7 @@ end
 shared_examples_for 'a nihilist' do
 
   describe file('/test') do
-    its(:content) { should == 'goodbye world' }
+    its(:content) { should == 'goodbye world... as if you even exist!' }
   end
 
 end

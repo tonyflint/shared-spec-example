@@ -16,6 +16,8 @@
 # limitations under the License.
 #
 
-source 'https://api.berkshelf.com/'
+require 'spec_helper'
 
-metadata
+describe 'Default' do
+  it_behaves_like 'a nihilist'
+end
